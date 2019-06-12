@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+ * converters.xml
+ *
+ * Copyright (C) 2019 Universidad de Sevilla
+ * 
+ * The use of this project is hereby constrained to the conditions of the 
+ * TDG Licence, a copy of which you may download from 
+ * http://www.tdg-seville.info/License.html
+ -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd		
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd		
+	">
+
+	<util:list id="converters">
+		
+		<bean class="converters.ActorToStringConverter"/>
+		<bean class="converters.StringToActorConverter"/>
+		
+		<bean class="converters.AdministratorToStringConverter"/>
+		<bean class="converters.StringToAdministratorConverter"/>
+		
+		<bean class="converters.BoxToStringConverter"/>
+		<bean class="converters.StringToBoxConverter"/>
+		
+		<bean class="converters.AuthorityToStringConverter"/>
+		<bean class="converters.StringToAuthorityConverter"/>
+		
+		<bean class="converters.CompetitionToStringConverter"/>
+		<bean class="converters.StringToCompetitionConverter"/>
+		
+		<bean class="converters.ConfigurationToStringConverter"/>
+		<bean class="converters.StringToConfigurationConverter"/>
+		
+		<bean class="converters.CreditCardToStringConverter"/>
+		<bean class="converters.StringToCreditCardConverter"/>
+		
+		<bean class="converters.FederationToStringConverter"/>
+		<bean class="converters.StringToFederationConverter"/>
+		
+		<bean class="converters.FinderToStringConverter"/>
+		<bean class="converters.StringToFinderConverter"/>
+		
+		<bean class="converters.FormatToStringConverter"/>
+		<bean class="converters.StringToFormatConverter"/>
+		
+		<bean class="converters.GameToStringConverter"/>
+		<bean class="converters.StringToGameConverter"/>
+		
+		<bean class="converters.HiringToStringConverter"/>
+		<bean class="converters.StringToHiringConverter"/>
+		
+		<bean class="converters.HistoryToStringConverter"/>
+		<bean class="converters.StringToHistoryConverter"/>
+		
+		<bean class="converters.ManagerToStringConverter"/>
+		<bean class="converters.StringToManagerConverter"/>
+		
+		<bean class="converters.MessageToStringConverter"/>
+		<bean class="converters.StringToMessageConverter"/>
+		
+		<bean class="converters.MinutesToStringConverter"/>
+		<bean class="converters.StringToMinutesConverter"/>
+		
+		<bean class="converters.PersonalDataToStringConverter"/>
+		<bean class="converters.StringToPersonalDataConverter"/>
+		
+		<bean class="converters.PlayerToStringConverter"/>
+		<bean class="converters.StringToPlayerConverter"/>
+		
+		<bean class="converters.PlayerRecordToStringConverter"/>
+		<bean class="converters.StringToPlayerRecordConverter"/>
+		
+		<bean class="converters.PresidentToStringConverter"/>
+		<bean class="converters.StringToPresidentConverter"/>
+		
+		<bean class="converters.RefereeToStringConverter"/>
+		<bean class="converters.StringToRefereeConverter"/>
+		
+		<bean class="converters.ReportToStringConverter"/>
+		<bean class="converters.StringToReportConverter"/>
+		
+		<bean class="converters.SigningToStringConverter"/>
+		<bean class="converters.StringToSigningConverter"/>
+		
+		<bean class="converters.SponsorToStringConverter"/>
+		<bean class="converters.StringToSponsorConverter"/>
+		
+		<bean class="converters.SponsorshipToStringConverter"/>
+		<bean class="converters.StringToSponsorshipConverter"/>
+		
+		<bean class="converters.SportRecordToStringConverter"/>
+		<bean class="converters.StringToSportRecordConverter"/>
+		
+		<bean class="converters.StatisticalDataToStringConverter"/>
+		<bean class="converters.StringToStatisticalDataConverter"/>
+		
+		<bean class="converters.TeamToStringConverter"/>
+		<bean class="converters.StringToTeamConverter"/>
+		
+		<bean class="converters.TrainingToStringConverter"/>
+		<bean class="converters.StringToTrainingConverter"/>
+		
+	</util:list>
+	
+</beans>

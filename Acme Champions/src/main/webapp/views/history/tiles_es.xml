@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- 
+ * tiles_es.xml
+ *
+ * Copyright (C) 2019 Universidad de Sevilla
+ * 
+ * The use of this project is hereby constrained to the conditions of the 
+ * TDG Licence, a copy of which you may download from 
+ * http://www.tdg-seville.info/License.html
+ -->
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+      
+<tiles-definitions>
+
+	<definition name="history/display" extends="master.page">	
+		<put-attribute name="title" value="Historial: Mostrar" />
+		<put-attribute name="body" value="/views/history/display.jsp" />
+	</definition>
+	
+	<definition name="history/createHistory" extends="master.page">	
+		<put-attribute name="title" value="Historial: Crear" />
+		<put-attribute name="body" value="/views/history/createHistory.jsp" />
+	</definition>
+	
+	<definition name="history/editPersonalData" extends="master.page">	
+		<put-attribute name="title" value="Datos personales: Editar" />
+		<put-attribute name="body" value="/views/history/editPersonalData.jsp" />
+	</definition>
+	
+	<definition name="history/editPlayerRecord" extends="master.page">	
+		<put-attribute name="title" value="Récord como jugador" />
+		<put-attribute name="body" value="/views/history/editPlayerRecord.jsp" />
+	</definition>
+	
+	<definition name="history/editSportRecord" extends="master.page">	
+		<put-attribute name="title" value="Récord de deporte" />
+		<put-attribute name="body" value="/views/history/editSportRecord.jsp" />
+	</definition>
+	
+</tiles-definitions>

@@ -1,0 +1,3031 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- * PopulateDatabase.xml * * Copyright (C) 2019 Universidad de Sevilla 
+	* * The use of this project is hereby constrained to the conditions of the 
+	* TDG Licence, a copy of which you may download from * http://www.tdg-seville.info/License.html -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	">
+	
+		<!-- User accounts -->
+
+	<bean id="userAccount1" class="security.UserAccount">
+		<property name="username" value="admin" />
+		<property name="password" value="21232f297a57a5a743894a0e4a801fc3" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="ADMIN" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount2" class="security.UserAccount">
+		<property name="username" value="president1" />
+		<property name="password" value="e0c9961ee829a4c22298907efbc35168" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="PRESIDENT" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount3" class="security.UserAccount">
+		<property name="username" value="president2" />
+		<property name="password" value="96f80055fc18f1b74d7ebdc866ad5a75" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="PRESIDENT" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount4" class="security.UserAccount">
+		<property name="username" value="president3" />
+		<property name="password" value="0d477b8dbab2425582dc046fe2c79df7" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="PRESIDENT" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount5" class="security.UserAccount">
+		<property name="username" value="president4" />
+		<property name="password" value="013bde7d28e5abe4898514831b6ba28f" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="PRESIDENT" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount6" class="security.UserAccount">
+		<property name="username" value="player1" />
+		<property name="password" value="5d2bbc279b5ce75815849d5e3f0533ec" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="PLAYER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount7" class="security.UserAccount">
+		<property name="username" value="player2" />
+		<property name="password" value="88e77ff74930f37010370c296d14737b" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="PLAYER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount8" class="security.UserAccount">
+		<property name="username" value="player3" />
+		<property name="password" value="1aa3814dca32e4c0b79a2ca047ef1db0" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="PLAYER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount9" class="security.UserAccount">
+		<property name="username" value="player4" />
+		<property name="password" value="12efaba7fd50f5c66bd295683c0ce2a7" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="PLAYER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount10" class="security.UserAccount">
+		<property name="username" value="player5" />
+		<property name="password" value="c5aec8b7110bb97bf59ab1a06805ebdd" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="PLAYER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount11" class="security.UserAccount">
+		<property name="username" value="player6" />
+		<property name="password" value="9d470eed6fd655c08563e806848cdc6d" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="PLAYER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount12" class="security.UserAccount">
+		<property name="username" value="player7" />
+		<property name="password" value="10b5d73053b6372f33e28589a0285f80" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="PLAYER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount13" class="security.UserAccount">
+		<property name="username" value="player8" />
+		<property name="password" value="0d4753a9802fe6af7d3bab0c91cb07f3" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="PLAYER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount14" class="security.UserAccount">
+		<property name="username" value="player9" />
+		<property name="password" value="26a26a749d6d4cbe1da7c2f3a172fea8" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="PLAYER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount15" class="security.UserAccount">
+		<property name="username" value="player10" />
+		<property name="password" value="d9174af8299b39a7092f4b7683cf8ce2" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="PLAYER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount16" class="security.UserAccount">
+		<property name="username" value="player11" />
+		<property name="password" value="9762f0934dc0ea7270781f47971f6427" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="PLAYER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount17" class="security.UserAccount">
+		<property name="username" value="player12" />
+		<property name="password" value="00ef768852ca05393a4d6232c8ea1bc8" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="PLAYER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount18" class="security.UserAccount">
+		<property name="username" value="player13" />
+		<property name="password" value="c69b29cda2e8649394fe77b34385031a" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="PLAYER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount19" class="security.UserAccount">
+		<property name="username" value="player14" />
+		<property name="password" value="5a7ab0a606a7f94e590bdf216675051c" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="PLAYER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount20" class="security.UserAccount">
+		<property name="username" value="player15" />
+		<property name="password" value="22754aebeed53fbf272a76400ff81944" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="PLAYER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount21" class="security.UserAccount">
+		<property name="username" value="manager1" />
+		<property name="password" value="c240642ddef994358c96da82c0361a58" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="MANAGER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount22" class="security.UserAccount">
+		<property name="username" value="manager2" />
+		<property name="password" value="8df5127cd164b5bc2d2b78410a7eea0c" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="MANAGER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount23" class="security.UserAccount">
+		<property name="username" value="manager3" />
+		<property name="password" value="2d3a5db4a2a9717b43698520a8de57d0" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="MANAGER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount24" class="security.UserAccount">
+		<property name="username" value="referee1" />
+		<property name="password" value="092d469d0a71c8002e32f808b861f9a4" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="REFEREE" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount25" class="security.UserAccount">
+		<property name="username" value="federation1" />
+		<property name="password" value="bb6b717918201998673bebbb39e50190" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="FEDERATION" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount26" class="security.UserAccount">
+		<property name="username" value="sponsor1" />
+		<property name="password" value="42c63ad66d4dc07ed17753772bef96d6" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="SPONSOR" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount27" class="security.UserAccount">
+		<property name="username" value="president5" />
+		<property name="password" value="68c8ef88ce3dcbda7fced3aea26ab9f9" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="PRESIDENT" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount28" class="security.UserAccount">
+		<property name="username" value="player16" />
+		<property name="password" value="b75d3c6d9e66917aa36c72d81fcf870b" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="PLAYER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount29" class="security.UserAccount">
+		<property name="username" value="player17" />
+		<property name="password" value="5fac89990c235e7e6e6006ae2547bd98" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="PLAYER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount30" class="security.UserAccount">
+		<property name="username" value="player18" />
+		<property name="password" value="b916fc542e92c6cdaf062ed178ce75ae" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="PLAYER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount31" class="security.UserAccount">
+		<property name="username" value="referee2" />
+		<property name="password" value="4f556d5a66f4fe0d058523a7b8e19d91" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="REFEREE" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount32" class="security.UserAccount">
+		<property name="username" value="referee3" />
+		<property name="password" value="e7395e4f7c79a7cb1d93cec0849dd1de" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="REFEREE" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount33" class="security.UserAccount">
+		<property name="username" value="federation2" />
+		<property name="password" value="970ae413a792dbb49102adb164486431" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="FEDERATION" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount34" class="security.UserAccount">
+		<property name="username" value="sponsor2" />
+		<property name="password" value="3dc67f80a03324e01b1640f45d107485" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="SPONSOR" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount35" class="security.UserAccount">
+		<property name="username" value="sponsor3" />
+		<property name="password" value="857a54956061fdc1b88d7722cafe6519" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="SPONSOR" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount36" class="security.UserAccount">
+		<property name="username" value="manager4" />
+		<property name="password" value="e1ec6fc941af3ba79a4ac5242dd39735" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="MANAGER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount37" class="security.UserAccount">
+		<property name="username" value="player19" />
+		<property name="password" value="1958317ad532fa7bfddb8f03c9bb5e32" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="PLAYER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount38" class="security.UserAccount">
+		<property name="username" value="player20" />
+		<property name="password" value="ccddd3729eb1c4309a18f6b273621279" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="PLAYER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount39" class="security.UserAccount">
+		<property name="username" value="manager5" />
+		<property name="password" value="029cb1d27c0b9c551703ccba2591c334" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="MANAGER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount40" class="security.UserAccount">
+		<property name="username" value="manager6" />
+		<property name="password" value="46bae9ead851e0f288529e6322f4fd77" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="MANAGER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<!-- Administrators -->	
+	
+	<bean id="administrator1" class="domain.Administrator">
+		<property name="name" value="Francisco" />
+		<property name="surnames" value="Sánchez González" />
+		<property name="photo" value="http://cort.as/-IuHB" />
+		<property name="email" value="adminitrator1@mail.com" />
+		<property name="phone" value="+34 6769252365" />
+		<property name="address" value="Luna de Escacena 33" />
+		<property name="userAccount" ref="userAccount1" />
+	</bean>
+	
+	<!-- Presidents -->	
+	
+	<bean id="president1" class="domain.President">
+		<property name="name" value="Florentino" />
+		<property name="surnames" value="Pérez Pérez" />
+		<property name="photo" value="http://cort.as/-IuHL" />
+		<property name="email" value="florentineza@mail.com" />
+		<property name="phone" value="+34 6769252367" />
+		<property name="address" value="Paseo de la Castellana" />
+		<property name="userAccount" ref="userAccount2" />
+	</bean>
+	
+	<bean id="president2" class="domain.President">
+		<property name="name" value="José María" />
+		<property name="surnames" value="Del Nido Benavente" />
+		<property name="photo" value="http://cort.as/-IuHS" />
+		<property name="email" value="delnido@mail.com" />
+		<property name="phone" value="+34 6769852365" />
+		<property name="address" value="Mariano Benlliure" />
+		<property name="userAccount" ref="userAccount3" />
+	</bean>
+	
+	<bean id="president3" class="domain.President">
+		<property name="name" value="Manuel" />
+		<property name="surnames" value="Ruiz de Lopera" />
+		<property name="photo" value="http://cort.as/-IuHe" />
+		<property name="email" value="donmanue@mail.com" />
+		<property name="phone" value="+34 6169252365" />
+		<property name="address" value="Calle Jabugo" />
+		<property name="userAccount" ref="userAccount4" />
+	</bean>
+	
+	<bean id="president4" class="domain.President">
+		<property name="name" value="Enrique" />
+		<property name="surnames" value="Cerezo" />
+		<property name="photo" value="http://cort.as/-IuHk" />
+		<property name="email" value="cerezo@mail.com" />
+		<property name="phone" value="+34 6769252305" />
+		<property name="address" value="Plaza de Neptuno" />
+		<property name="userAccount" ref="userAccount5" />
+	</bean>
+	
+	<bean id="president5" class="domain.President">
+		<property name="name" value="Juan" />
+		<property name="surnames" value="Lapuerta" />
+		<property name="photo" value="http://cort.as/-IuI7" />
+		<property name="email" value="lapuerta@mail.com" />
+		<property name="phone" value="+34 6700252305" />
+		<property name="address" value="La Ramblas" />
+		<property name="userAccount" ref="userAccount27" />
+	</bean>
+	
+	<!-- Players -->	
+	
+	<bean id="player1" class="domain.Player">
+		<property name="name" value="Guillermo" />
+		<property name="surnames" value="Sara" />
+		<property name="photo" value="http://cort.as/-IuIO" />
+		<property name="email" value="gsara@mail.com" />
+		<property name="phone" value="+34 6789252067" />
+		<property name="address" value="La Pampa" />
+		<property name="positionEnglish" value="GOALKEEPER" />
+		<property name="positionSpanish" value="PORTERO" />
+		<property name="injured" value="false" />
+		<property name="punished" value="false" />
+		<property name="buyoutClause" value="35000000.0" />
+		<property name="squadNumber" value="1" />
+		<property name="squadName" value="SARA" />
+		<property name="team" ref="team1" />
+		<property name="userAccount" ref="userAccount6" />
+	</bean>
+	
+	<bean id="player2" class="domain.Player">
+		<property name="name" value="Aquivaldo" />
+		<property name="surnames" value="Mosquera" />
+		<property name="photo" value="http://cort.as/-IuIe" />
+		<property name="email" value="aquimosque@mail.com" />
+		<property name="phone" value="+34 6789852367" />
+		<property name="address" value="Paseo de las Delicias" />
+		<property name="positionEnglish" value="DEFENDER" />
+		<property name="positionSpanish" value="DEFENSA" />
+		<property name="injured" value="false" />
+		<property name="punished" value="false" />
+		<property name="buyoutClause" value="47000000.0" />
+		<property name="squadNumber" value="2" />
+		<property name="squadName" value="MOSQUERA" />
+		<property name="team" ref="team1" />
+		<property name="userAccount" ref="userAccount7" />
+	</bean>
+	
+	<bean id="player3" class="domain.Player">
+		<property name="name" value="José Miguel" />
+		<property name="surnames" value="García" />
+		<property name="photo" value="http://cort.as/-Iy0R" />
+		<property name="email" value="jomigar@mail.com" />
+		<property name="phone" value="+34 6709252367" />
+		<property name="address" value="Pagés del Corro" />
+		<property name="positionEnglish" value="DEFENDER" />
+		<property name="positionSpanish" value="DEFENSA" />
+		<property name="injured" value="false" />
+		<property name="punished" value="false" />
+		<property name="buyoutClause" value="50000000.0" />
+		<property name="squadNumber" value="3" />
+		<property name="squadName" value="JOSEMI" />
+		<property name="team" ref="team1" />
+		<property name="userAccount" ref="userAccount8" />
+	</bean>
+	
+	<bean id="player4" class="domain.Player">
+		<property name="name" value="Francisco Javier" />
+		<property name="surnames" value="Pérez" />
+		<property name="photo" value="http://cort.as/-Iy_d" />
+		<property name="email" value="frajape@mail.com" />
+		<property name="phone" value="+34 6789252361" />
+		<property name="address" value="El Greco" />
+		<property name="positionEnglish" value="MIDFIELDER" />
+		<property name="positionSpanish" value="CENTROCAMPISTA" />
+		<property name="injured" value="false" />
+		<property name="punished" value="true" />
+		<property name="buyoutClause" value="25000000.0" />
+		<property name="squadNumber" value="11" />
+		<property name="squadName" value="JAVI PEREZ" />
+		<property name="team" ref="team1" />
+		<property name="userAccount" ref="userAccount9" />
+	</bean>
+	
+	<bean id="player5" class="domain.Player">
+		<property name="name" value="William Arturo" />
+		<property name="surnames" value="Jiménez" />
+		<property name="photo" value="http://cort.as/-Iy12" />
+		<property name="email" value="wilarji@mail.com" />
+		<property name="phone" value="+34 6789257367" />
+		<property name="address" value="Regina" />
+		<property name="positionEnglish" value="STRIKER" />
+		<property name="positionSpanish" value="DELANTERO" />
+		<property name="injured" value="false" />
+		<property name="punished" value="true" />
+		<property name="buyoutClause" value="75000000.0" />
+		<property name="squadNumber" value="9" />
+		<property name="squadName" value="WILLY" />
+		<property name="team" ref="team1" />
+		<property name="userAccount" ref="userAccount10" />
+	</bean>
+	
+	<bean id="player6" class="domain.Player">
+		<property name="name" value="Mamadou" />
+		<property name="surnames" value="M'Bambi" />
+		<property name="photo" value="http://cort.as/-Iy1e" />
+		<property name="email" value="mamadoumbambi@mail.com" />
+		<property name="phone" value="+34 6789252337" />
+		<property name="address" value="República Argentina" />
+		<property name="positionEnglish" value="MIDFIELDER" />
+		<property name="positionSpanish" value="CENTROCAMPISTA" />
+		<property name="injured" value="false" />
+		<property name="punished" value="false" />
+		<property name="buyoutClause" value="80000000.0" />
+		<property name="squadNumber" value="15" />
+		<property name="squadName" value="M'BAMBI" />
+		<property name="team" ref="team2" />
+		<property name="userAccount" ref="userAccount11" />
+	</bean>
+	
+	<bean id="player7" class="domain.Player">
+		<property name="name" value="Julio" />
+		<property name="surnames" value="González" />
+		<property name="photo" value="http://cort.as/-Iy2A" />
+		<property name="email" value="julgon@mail.com" />
+		<property name="phone" value="+34 6089252367" />
+		<property name="address" value="Enramadilla" />
+		<property name="positionEnglish" value="GOALKEEPER" />
+		<property name="positionSpanish" value="PORTERO" />
+		<property name="injured" value="false" />
+		<property name="punished" value="false" />
+		<property name="buyoutClause" value="30000000.0" />
+		<property name="squadNumber" value="13" />
+		<property name="squadName" value="JULIO" />
+		<property name="team" ref="team2" />
+		<property name="userAccount" ref="userAccount12" />
+	</bean>
+	
+	<bean id="player8" class="domain.Player">
+		<property name="name" value="Pedro" />
+		<property name="surnames" value="Monteiro" />
+		<property name="photo" value="http://cort.as/-Iy2W" />
+		<property name="email" value="pedmon@mail.com" />
+		<property name="phone" value="+34 7789252367" />
+		<property name="address" value="Almirante Topete" />
+		<property name="positionEnglish" value="DEFENDER" />
+		<property name="positionSpanish" value="DEFENSA" />
+		<property name="injured" value="false" />
+		<property name="punished" value="false" />
+		<property name="buyoutClause" value="45000000.0" />
+		<property name="squadNumber" value="4" />
+		<property name="squadName" value="PEDRINHO" />
+		<property name="team" ref="team2" />
+		<property name="userAccount" ref="userAccount13" />
+	</bean>
+	
+	<bean id="player9" class="domain.Player">
+		<property name="name" value="Philipe" />
+		<property name="surnames" value="Mignon" />
+		<property name="photo" value="http://cort.as/-Iy3H" />
+		<property name="email" value="phimig@mail.com" />
+		<property name="phone" value="+34 6785252367" />
+		<property name="address" value="Gran Plaza" />
+		<property name="positionEnglish" value="MIDFIELDER" />
+		<property name="positionSpanish" value="CENTROCAMPISTA" />
+		<property name="injured" value="false" />
+		<property name="punished" value="false" />
+		<property name="buyoutClause" value="30000000.0" />
+		<property name="squadNumber" value="21" />
+		<property name="squadName" value="MIGNON" />
+		<property name="team" ref="team2" />
+		<property name="userAccount" ref="userAccount14" />
+	</bean>
+	
+	<bean id="player10" class="domain.Player">
+		<property name="name" value="Joaquín" />
+		<property name="surnames" value="Medina" />
+		<property name="photo" value="http://cort.as/-Iy3u" />
+		<property name="email" value="jome@mail.com" />
+		<property name="phone" value="+34 6789252360" />
+		<property name="address" value="Plaza de Cuba" />
+		<property name="positionEnglish" value="STRIKER" />
+		<property name="positionSpanish" value="DELANTERO" />
+		<property name="injured" value="false" />
+		<property name="punished" value="false" />
+		<property name="buyoutClause" value="55000000.0" />
+		<property name="squadNumber" value="14" />
+		<property name="squadName" value="QUINI" />
+		<property name="team" ref="team2" />
+		<property name="userAccount" ref="userAccount15" />
+	</bean>
+	
+	<bean id="player11" class="domain.Player">
+		<property name="name" value="Eric" />
+		<property name="surnames" value="Van Helsin" />
+		<property name="photo" value="http://cort.as/-Iy58" />
+		<property name="email" value="ervanhel@mail.com" />
+		<property name="phone" value="+34 6789252367" />
+		<property name="address" value="Avenida de Andalucia" />
+		<property name="positionEnglish" value="DEFENDER" />
+		<property name="positionSpanish" value="DEFENSA" />
+		<property name="injured" value="false" />
+		<property name="punished" value="true" />
+		<property name="buyoutClause" value="70000000.0" />
+		<property name="squadNumber" value="6" />
+		<property name="squadName" value="VAN HELSIN" />
+		<property name="team" ref="team3" />
+		<property name="userAccount" ref="userAccount16" />
+	</bean>
+	
+	<bean id="player12" class="domain.Player">
+		<property name="name" value="Moisés" />
+		<property name="surnames" value="Gutiérrez" />
+		<property name="photo" value="http://cort.as/-Iy6O" />
+		<property name="email" value="moigut@mail.com" />
+		<property name="phone" value="+34 6789202367" />
+		<property name="address" value="Blanco White" />
+		<property name="positionEnglish" value="STRIKER" />
+		<property name="positionSpanish" value="DELANTERO" />
+		<property name="injured" value="false" />
+		<property name="punished" value="false" />
+		<property name="buyoutClause" value="65000000.0" />
+		<property name="squadNumber" value="10" />
+		<property name="squadName" value="MOI GUTIERREZ" />
+		<property name="team" ref="team3" />
+		<property name="userAccount" ref="userAccount17" />
+	</bean>
+	
+	<bean id="player13" class="domain.Player">
+		<property name="name" value="Vincenzo" />
+		<property name="surnames" value="Maccia" />
+		<property name="photo" value="http://cort.as/-Iy8Q" />
+		<property name="email" value="vinmac@mail.com" />
+		<property name="phone" value="+34 6789252362" />
+		<property name="address" value="Eduardo Dato" />
+		<property name="positionEnglish" value="DEFENDER" />
+		<property name="positionSpanish" value="DEFENSA" />
+		<property name="injured" value="false" />
+		<property name="punished" value="false" />
+		<property name="buyoutClause" value="30000000.0" />
+		<property name="squadNumber" value="24" />
+		<property name="squadName" value="ENZO MACCIA" />
+		<property name="team" ref="team3" />
+		<property name="userAccount" ref="userAccount18" />
+	</bean>
+	
+	<bean id="player14" class="domain.Player">
+		<property name="name" value="Francisco" />
+		<property name="surnames" value="Rodríguez" />
+		<property name="photo" value="http://cort.as/-Iy9B" />
+		<property name="email" value="frod@mail.com" />
+		<property name="phone" value="+34 6789152367" />
+		<property name="address" value="Emilio Lemos" />
+		<property name="positionEnglish" value="STRIKER" />
+		<property name="positionSpanish" value="DELANTERO" />
+		<property name="injured" value="false" />
+		<property name="punished" value="false" />
+		<property name="buyoutClause" value="25000000.0" />
+		<property name="squadNumber" value="20" />
+		<property name="squadName" value="KIKO" />
+		<property name="team" ref="team5" />
+		<property name="userAccount" ref="userAccount19" />
+	</bean>
+	
+	<bean id="player15" class="domain.Player">
+		<property name="name" value="Iñaki" />
+		<property name="surnames" value="Igartiburu" />
+		<property name="photo" value="http://cort.as/-Iy9s" />
+		<property name="email" value="igar@mail.com" />
+		<property name="phone" value="+34 6789299367" />
+		<property name="address" value="Avenida de la Innovación" />
+		<property name="positionEnglish" value="MIDFIELDER" />
+		<property name="positionSpanish" value="CENTROCAMPISTA" />
+		<property name="injured" value="true" />
+		<property name="punished" value="false" />
+		<property name="buyoutClause" value="30000000.0" />
+		<property name="squadNumber" value="23" />
+		<property name="squadName" value="IGARTIBURU" />
+		<property name="team" ref="team5" />
+		<property name="userAccount" ref="userAccount20" />
+	</bean>
+	
+	<bean id="player16" class="domain.Player">
+		<property name="name" value="Robert" />
+		<property name="surnames" value="Walker" />
+		<property name="photo" value="http://cort.as/-IyAK" />
+		<property name="email" value="rowa@mail.com" />
+		<property name="phone" value="+34 7789150667" />
+		<property name="address" value="Avenida de Hytasa" />
+		<property name="positionEnglish" value="DEFENDER" />
+		<property name="positionSpanish" value="DEFENSA" />
+		<property name="injured" value="false" />
+		<property name="punished" value="false" />
+		<property name="buyoutClause" value="20000000.0" />
+		<property name="squadNumber" value="3" />
+		<property name="squadName" value="BOB WALKER" />
+		<property name="team" ref="team5" />
+		<property name="userAccount" ref="userAccount28" />
+	</bean>
+	
+	<bean id="player17" class="domain.Player">
+		<property name="name" value="Erik" />
+		<property name="surnames" value="Jahnsen" />
+		<property name="photo" value="http://cort.as/-IyAj" />
+		<property name="email" value="erija@mail.com" />
+		<property name="phone" value="+34 6119152367" />
+		<property name="address" value="Avenida de la Reina Mercedes" />
+		<property name="positionEnglish" value="STRIKER" />
+		<property name="positionSpanish" value="DELANTERO" />
+		<property name="injured" value="false" />
+		<property name="punished" value="false" />
+		<property name="buyoutClause" value="15000000.0" />
+		<property name="squadNumber" value="24" />
+		<property name="squadName" value="JAHNSEN" />
+		<property name="team" ref="team5" />
+		<property name="userAccount" ref="userAccount29" />
+	</bean>
+	
+	<bean id="player18" class="domain.Player">
+		<property name="name" value="Jurgen" />
+		<property name="surnames" value="Berhman" />
+		<property name="photo" value="http://cort.as/-IyCB" />
+		<property name="email" value="jurber@mail.com" />
+		<property name="phone" value="+34 6789152227" />
+		<property name="address" value="Arroyo" />
+		<property name="positionEnglish" value="DEFENDER" />
+		<property name="positionSpanish" value="DEFENSA" />
+		<property name="injured" value="false" />
+		<property name="punished" value="false" />
+		<property name="buyoutClause" value="35000000.0" />
+		<property name="squadNumber" value="17" />
+		<property name="squadName" value="BERHMAN" />
+		<property name="team" ref="team5" />
+		<property name="userAccount" ref="userAccount30" />
+	</bean>
+	
+	<bean id="player19" class="domain.Player">
+		<property name="name" value="Jesús" />
+		<property name="surnames" value="López" />
+		<property name="photo" value="http://cort.as/-IyCT" />
+		<property name="email" value="jelo@mail.com" />
+		<property name="phone" value="+34 7009152227" />
+		<property name="address" value="Recaredo" />
+		<property name="positionEnglish" value="MIDFIELDER" />
+		<property name="positionSpanish" value="CENTROCAMPISTA" />
+		<property name="injured" value="false" />
+		<property name="punished" value="false" />
+		<property name="squadNumber" value="77" />
+		<property name="squadName" value="SUSO" />
+		<property name="userAccount" ref="userAccount37" />
+	</bean>
+	
+	<bean id="player20" class="domain.Player">
+		<property name="name" value="Alexandr" />
+		<property name="surnames" value="Kirshev" />
+		<property name="photo" value="http://cort.as/-IyD9" />
+		<property name="email" value="alkir@mail.com" />
+		<property name="phone" value="+34 6789150007" />
+		<property name="address" value="Calatrava" />
+		<property name="positionEnglish" value="DEFENDER" />
+		<property name="positionSpanish" value="DEFENSA" />
+		<property name="injured" value="false" />
+		<property name="punished" value="false" />
+		<property name="squadNumber" value="87" />
+		<property name="squadName" value="KIRSHEV" />
+		<property name="userAccount" ref="userAccount38" />
+	</bean>
+	
+	<!-- Managers -->	
+	
+	<bean id="manager1" class="domain.Manager">
+		<property name="name" value="Louis" />
+		<property name="surnames" value="Van Gaal" />
+		<property name="photo" value="http://cort.as/-IuJk" />
+		<property name="email" value="siemprenegatifa@mail.com" />
+		<property name="phone" value="+34 6169252367" />
+		<property name="address" value="Puñonrostro" />
+		<property name="userAccount" ref="userAccount21" />
+		<property name="team" ref="team1" />
+	</bean>
+	
+	<bean id="manager2" class="domain.Manager">
+		<property name="name" value="José" />
+		<property name="surnames" value="Mourinho" />
+		<property name="photo" value="http://cort.as/-IuJs" />
+		<property name="email" value="mou@mail.com" />
+		<property name="phone" value="+34 776925257" />
+		<property name="address" value="Laraña" />
+		<property name="userAccount" ref="userAccount22" />
+		<property name="team" ref="team2" />
+	</bean>
+	
+	<bean id="manager3" class="domain.Manager">
+		<property name="name" value="Carlos Timoteo" />
+		<property name="surnames" value="Griguol" />
+		<property name="photo" value="http://cort.as/-IuKH" />
+		<property name="email" value="cartigri@mail.com" />
+		<property name="phone" value="+34 6760052367" />
+		<property name="address" value="Trajano" />
+		<property name="userAccount" ref="userAccount23" />
+	</bean>
+	
+	<bean id="manager4" class="domain.Manager">
+		<property name="name" value="Gregorio" />
+		<property name="surnames" value="Manzano" />
+		<property name="photo" value="http://cort.as/-IuKa" />
+		<property name="email" value="greman@mail.com" />
+		<property name="phone" value="+34 6768352367" />
+		<property name="address" value="Adriano" />
+		<property name="userAccount" ref="userAccount36" />
+		<property name="team" ref="team5" />
+	</bean>
+	
+	<bean id="manager5" class="domain.Manager">
+		<property name="name" value="Pepe" />
+		<property name="surnames" value="Mel" />
+		<property name="photo" value="http://cort.as/-IuKn" />
+		<property name="email" value="pepemer@mail.com" />
+		<property name="phone" value="+34 6768356111" />
+		<property name="address" value="Regina" />
+		<property name="userAccount" ref="userAccount39" />
+	</bean>
+	
+	<bean id="manager6" class="domain.Manager">
+		<property name="name" value="Rafa" />
+		<property name="surnames" value="Benítez" />
+		<property name="photo" value="http://cort.as/-IuL4" />
+		<property name="email" value="refben@mail.com" />
+		<property name="phone" value="+34 6779452367" />
+		<property name="address" value="Marqués de Pickman" />
+		<property name="userAccount" ref="userAccount40" />
+	</bean>
+	
+	<!-- Referees -->	
+	
+	<bean id="referee1" class="domain.Referee">
+		<property name="name" value="Mikel" />
+		<property name="surnames" value="Pérez Lasa" />
+		<property name="photo" value="http://cort.as/-IuLE" />
+		<property name="email" value="mipela@mail.com" />
+		<property name="phone" value="+34 7769252360" />
+		<property name="address" value="Avenida de la Buhaira" />
+		<property name="userAccount" ref="userAccount24" />
+	</bean>
+	
+	<bean id="referee2" class="domain.Referee">
+		<property name="name" value="Antonio" />
+		<property name="surnames" value="Mateu Lahoz" />
+		<property name="photo" value="http://cort.as/-IuLX" />
+		<property name="email" value="mala@mail.com" />
+		<property name="phone" value="+34 7769252990" />
+		<property name="address" value="Avenida de las Razas" />
+		<property name="userAccount" ref="userAccount31" />
+	</bean>
+	
+	<bean id="referee3" class="domain.Referee">
+		<property name="name" value="Bernardino" />
+		<property name="surnames" value="Gonzalez Vazquez" />
+		<property name="photo" value="http://cort.as/-IuLi" />
+		<property name="email" value="vergova@mail.com" />
+		<property name="phone" value="+34 7779252360" />
+		<property name="address" value="Avenida del Deporte" />
+		<property name="userAccount" ref="userAccount32" />
+	</bean>
+	
+	<!-- Federations -->	
+	
+	<bean id="federation1" class="domain.Federation">
+		<property name="name" value="Real Federación" />
+		<property name="surnames" value="Ibérica de Fútbol" />
+		<property name="photo" value="http://cort.as/-IuLq" />
+		<property name="email" value="rfif@mail.com" />
+		<property name="phone" value="+34 6769842365" />
+		<property name="address" value="Ronda del Tamarguillo" />
+		<property name="userAccount" ref="userAccount25" />
+		<property name="establishmentDate" value="1981/06/02" />
+		
+	</bean>
+	
+	<bean id="federation2" class="domain.Federation">
+		<property name="name" value="Federación" />
+		<property name="surnames" value="Levantina de Fútbol" />
+		<property name="photo" value="http://cort.as/-IuLv" />
+		<property name="email" value="levan@mail.com" />
+		<property name="phone" value="+34 6169848365" />
+		<property name="address" value="Avenida de la Paz" />
+		<property name="userAccount" ref="userAccount33" />
+		<property name="establishmentDate" value="1987/02/09" />
+		
+	</bean>
+	
+	<!-- Sponsors -->	
+	
+	<bean id="sponsor1" class="domain.Sponsor">
+		<property name="name" value="Manuel" />
+		<property name="surnames" value="Ramos" />
+		<property name="photo" value="http://cort.as/-IuM8" />
+		<property name="email" value="manram@mail.com" />
+		<property name="phone" value="+34 6769803365" />
+		<property name="address" value="Ronda de Capuchinos" />
+		<property name="userAccount" ref="userAccount26" />
+		<property name="creditCard" ref="creditCard1" />
+		
+	</bean>
+	
+	<bean id="sponsor2" class="domain.Sponsor">
+		<property name="name" value="Eva" />
+		<property name="surnames" value="Lopez" />
+		<property name="photo" value="http://cort.as/-IuMZ" />
+		<property name="email" value="evlo@mail.com" />
+		<property name="phone" value="+34 6769643365" />
+		<property name="address" value="Sierpes" />
+		<property name="userAccount" ref="userAccount34" />
+		<property name="creditCard" ref="creditCard2" />
+		
+	</bean>
+	
+	<bean id="sponsor3" class="domain.Sponsor">
+		<property name="name" value="Marina" />
+		<property name="surnames" value="Gil" />
+		<property name="photo" value="http://cort.as/-IuMy" />
+		<property name="email" value="margil@mail.com" />
+		<property name="phone" value="+34 6769803309" />
+		<property name="address" value="Alemanes" />
+		<property name="userAccount" ref="userAccount35" />
+		<property name="creditCard" ref="creditCard3" />
+		
+	</bean>
+	
+	<!-- Finder -->
+
+	<bean id="finder1" class="domain.Finder">
+		<property name="keyWord" value="" />
+		<property name="position" value="" />
+		<property name="president" ref="president1" />
+		<property name="lastUpdate" value="2019/05/10 11:00"/>
+		<property name="players">
+			<list>
+			
+			</list>
+		</property>
+		<property name="managers">
+			<list>
+
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="finder2" class="domain.Finder">
+		<property name="keyWord" value="" />
+		<property name="position" value="" />
+		<property name="president" ref="president2" />
+		<property name="lastUpdate" value="2019/05/11 12:00"/>
+		<property name="players">
+			<list>
+
+			</list>
+		</property>
+		<property name="managers">
+			<list>
+
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="finder3" class="domain.Finder">
+		<property name="keyWord" value="" />
+		<property name="president" ref="president3" />
+		<property name="position" value="" />
+		<property name="lastUpdate" value="2019/05/12 13:00"/>
+		<property name="players">
+			<list>
+		
+			</list>
+		</property>
+		<property name="managers">
+			<list>
+		
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="finder4" class="domain.Finder">
+		<property name="keyWord" value="" />
+		<property name="position" value="" />
+		<property name="president" ref="president4" />
+		<property name="lastUpdate" value="2019/05/13 14:00"/>
+		<property name="players">
+			<list>
+
+			</list>
+		</property>
+		<property name="managers">
+			<list>
+
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="finder5" class="domain.Finder">
+		<property name="keyWord" value="" />
+		<property name="position" value="" />
+		<property name="president" ref="president5" />
+		<property name="lastUpdate" value="2019/05/14 13:00"/>
+		<property name="players">
+			<list>
+
+			</list>
+		</property>
+		<property name="managers">
+			<list>
+
+			</list>
+		</property>
+	</bean>
+	
+	
+	
+	<!-- Boxes -->
+
+	<bean id="box1" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="administrator1" />
+		
+	</bean>
+
+	<bean id="box2" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="administrator1" />
+	
+	</bean>
+
+	<bean id="box3" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="administrator1" />
+		
+	</bean>
+
+	<bean id="box4" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="administrator1" />
+		
+	</bean>
+	
+	<bean id="box5" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="president1" />
+		
+	</bean>
+
+	<bean id="box6" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="president1" />
+	
+	</bean>
+
+	<bean id="box7" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="president1" />
+		
+	</bean>
+
+	<bean id="box8" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="president1" />
+	</bean>
+	
+	
+	<bean id="box9" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="president2" />
+		
+	</bean>
+
+	<bean id="box10" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="president2" />
+	
+	</bean>
+
+	<bean id="box11" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="president2" />
+		
+	</bean>
+
+	<bean id="box12" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="president2" />
+	</bean>
+	
+	<bean id="box13" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="president3" />
+		
+	</bean>
+
+	<bean id="box14" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="president3" />
+	
+	</bean>
+
+	<bean id="box15" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="president3" />
+		
+	</bean>
+
+	<bean id="box16" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="president3" />
+	</bean>
+	
+	<bean id="box17" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="president4" />
+		
+	</bean>
+
+	<bean id="box18" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="president4" />
+	
+	</bean>
+
+	<bean id="box19" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="president4" />
+		
+	</bean>
+
+	<bean id="box20" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="president4" />
+	</bean>
+	
+	<bean id="box21" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="player1" />
+		
+	</bean>
+
+	<bean id="box22" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="player1" />
+	
+	</bean>
+
+	<bean id="box23" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="player1" />
+		
+	</bean>
+
+	<bean id="box24" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="player1" />
+	</bean>
+	
+	<bean id="box25" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="player2" />
+		
+	</bean>
+
+	<bean id="box26" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="player2" />
+	
+	</bean>
+
+	<bean id="box27" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="player2" />
+		
+	</bean>
+
+	<bean id="box28" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="player2" />
+	</bean>
+	
+	<bean id="box29" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="player3" />
+		
+	</bean>
+
+	<bean id="box30" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="player3" />
+	
+	</bean>
+
+	<bean id="box31" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="player3" />
+		
+	</bean>
+
+	<bean id="box32" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="player3" />
+	</bean>
+	
+	<bean id="box33" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="player4" />
+		
+	</bean>
+
+	<bean id="box34" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="player4" />
+	
+	</bean>
+
+	<bean id="box35" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="player4" />
+		
+	</bean>
+
+	<bean id="box36" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="player4" />
+	</bean>
+	
+	<bean id="box37" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="player5" />
+		
+	</bean>
+
+	<bean id="box38" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="player5" />
+	
+	</bean>
+
+	<bean id="box39" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="player5" />
+		
+	</bean>
+
+	<bean id="box40" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="player5" />
+	</bean>
+	
+	<bean id="box41" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="player6" />
+		
+	</bean>
+
+	<bean id="box42" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="player6" />
+	
+	</bean>
+
+	<bean id="box43" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="player6" />
+		
+	</bean>
+
+	<bean id="box44" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="player6" />
+	</bean>
+	
+	<bean id="box45" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="player7" />
+		
+	</bean>
+
+	<bean id="box46" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="player7" />
+	
+	</bean>
+
+	<bean id="box47" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="player7" />
+		
+	</bean>
+
+	<bean id="box48" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="player7" />
+	</bean>
+	
+	<bean id="box49" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="player8" />
+		
+	</bean>
+
+	<bean id="box50" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="player8" />
+	
+	</bean>
+
+	<bean id="box51" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="player8" />
+		
+	</bean>
+
+	<bean id="box52" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="player8" />
+	</bean>
+	
+	<bean id="box53" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="player9" />
+		
+	</bean>
+
+	<bean id="box54" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="player9" />
+	
+	</bean>
+
+	<bean id="box55" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="player9" />
+		
+	</bean>
+
+	<bean id="box56" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="player9" />
+	</bean>
+	
+	<bean id="box57" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="player10" />
+		
+	</bean>
+
+	<bean id="box58" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="player10" />
+	
+	</bean>
+
+	<bean id="box59" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="player10" />
+		
+	</bean>
+
+	<bean id="box60" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="player10" />
+	</bean>
+	
+	<bean id="box61" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="player11" />
+		
+	</bean>
+
+	<bean id="box62" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="player11" />
+	
+	</bean>
+
+	<bean id="box63" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="player11" />
+		
+	</bean>
+
+	<bean id="box64" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="player11" />
+	</bean>
+	
+	<bean id="box65" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="player12" />
+		
+	</bean>
+
+	<bean id="box66" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="player12" />
+	
+	</bean>
+
+	<bean id="box67" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="player12" />
+		
+	</bean>
+
+	<bean id="box68" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="player12" />
+	</bean>
+	
+	<bean id="box69" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="player13" />
+		
+	</bean>
+
+	<bean id="box70" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="player13" />
+	
+	</bean>
+
+	<bean id="box71" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="player13" />
+		
+	</bean>
+
+	<bean id="box72" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="player13" />
+	</bean>
+	
+	<bean id="box73" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="player14" />
+		
+	</bean>
+
+	<bean id="box74" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="player14" />
+	
+	</bean>
+
+	<bean id="box75" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="player14" />
+		
+	</bean>
+
+	<bean id="box76" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="player14" />
+	</bean>
+	
+	<bean id="box77" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="player15" />
+		
+	</bean>
+
+	<bean id="box78" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="player15" />
+	
+	</bean>
+
+	<bean id="box79" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="player15" />
+		
+	</bean>
+
+	<bean id="box80" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="player15" />
+	</bean>
+	
+	<bean id="box81" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="manager1" />
+		
+	</bean>
+
+	<bean id="box82" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="manager1" />
+	
+	</bean>
+
+	<bean id="box83" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="manager1" />
+		
+	</bean>
+
+	<bean id="box84" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="manager1" />
+	</bean>
+	
+	<bean id="box85" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="manager2" />
+		
+	</bean>
+
+	<bean id="box86" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="manager2" />
+	
+	</bean>
+
+	<bean id="box87" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="manager2" />
+		
+	</bean>
+
+	<bean id="box88" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="manager2" />
+	</bean>
+	
+	<bean id="box89" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="manager3" />
+		
+	</bean>
+
+	<bean id="box90" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="manager3" />
+	
+	</bean>
+
+	<bean id="box91" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="manager3" />
+		
+	</bean>
+
+	<bean id="box92" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="manager3" />
+	</bean>
+	
+	<bean id="box93" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="referee1" />
+		
+	</bean>
+
+	<bean id="box94" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="referee1" />
+	
+	</bean>
+
+	<bean id="box95" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="referee1" />
+		
+	</bean>
+
+	<bean id="box96" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="referee1" />
+	</bean>
+	
+	<bean id="box97" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="federation1" />
+		
+	</bean>
+
+	<bean id="box98" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="federation1" />
+	
+	</bean>
+
+	<bean id="box99" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="federation1" />
+		
+	</bean>
+
+	<bean id="box100" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="federation1" />
+	</bean>
+	
+	<bean id="box101" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="sponsor1" />
+		
+	</bean>
+
+	<bean id="box102" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="sponsor1" />
+	
+	</bean>
+
+	<bean id="box103" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="sponsor1" />
+		
+	</bean>
+
+	<bean id="box104" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="sponsor1" />
+	</bean>
+	
+	<bean id="box105" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="president5" />
+		
+	</bean>
+
+	<bean id="box106" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="president5" />
+	
+	</bean>
+
+	<bean id="box107" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="president5" />
+		
+	</bean>
+
+	<bean id="box108" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="president5" />
+	</bean>
+	
+	<bean id="box109" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="player16" />
+		
+	</bean>
+
+	<bean id="box110" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="player16" />
+	
+	</bean>
+
+	<bean id="box111" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="player16" />
+		
+	</bean>
+
+	<bean id="box112" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="player16" />
+	</bean>
+	
+	<bean id="box113" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="player17" />
+		
+	</bean>
+
+	<bean id="box114" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="player17" />
+	
+	</bean>
+
+	<bean id="box115" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="player17" />
+		
+	</bean>
+
+	<bean id="box116" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="player17" />
+	</bean>
+	
+	<bean id="box117" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="player18" />
+		
+	</bean>
+
+	<bean id="box118" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="player18" />
+	
+	</bean>
+
+	<bean id="box119" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="player18" />
+		
+	</bean>
+
+	<bean id="box120" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="player18" />
+	</bean>
+	
+	<bean id="box121" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="referee2" />
+		
+	</bean>
+
+	<bean id="box122" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="referee2" />
+	
+	</bean>
+
+	<bean id="box123" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="referee2" />
+		
+	</bean>
+
+	<bean id="box124" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="referee2" />
+	</bean>
+	
+	<bean id="box125" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="referee3" />
+		
+	</bean>
+
+	<bean id="box126" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="referee3" />
+	
+	</bean>
+
+	<bean id="box127" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="referee3" />
+		
+	</bean>
+
+	<bean id="box128" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="referee3" />
+	</bean>
+	
+	<bean id="box129" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="federation2" />
+		
+	</bean>
+
+	<bean id="box130" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="federation2" />
+	
+	</bean>
+
+	<bean id="box131" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="federation2" />
+		
+	</bean>
+
+	<bean id="box132" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="federation2" />
+	</bean>
+	
+	<bean id="box133" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="sponsor2" />
+		
+	</bean>
+
+	<bean id="box134" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="sponsor2" />
+	
+	</bean>
+
+	<bean id="box135" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="sponsor2" />
+		
+	</bean>
+
+	<bean id="box136" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="sponsor2" />
+	</bean>
+	
+	<bean id="box137" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="sponsor3" />
+		
+	</bean>
+
+	<bean id="box138" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="sponsor3" />
+	
+	</bean>
+
+	<bean id="box139" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="sponsor3" />
+		
+	</bean>
+
+	<bean id="box140" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="sponsor3" />
+	</bean>
+	
+	<bean id="box141" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="manager4" />
+		
+	</bean>
+
+	<bean id="box142" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="manager4" />
+	
+	</bean>
+
+	<bean id="box143" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="manager4" />
+		
+	</bean>
+
+	<bean id="box144" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="manager4" />
+	</bean>
+	
+	<bean id="box145" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="player19" />
+		
+	</bean>
+
+	<bean id="box146" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="player19" />
+	
+	</bean>
+
+	<bean id="box147" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="player19" />
+		
+	</bean>
+
+	<bean id="box148" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="player19" />
+	</bean>
+	
+	<bean id="box149" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="player20" />
+		
+	</bean>
+
+	<bean id="box150" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="player20" />
+	
+	</bean>
+
+	<bean id="box151" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="player20" />
+		
+	</bean>
+
+	<bean id="box152" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="player20" />
+	</bean>
+	
+	<bean id="box153" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="manager5" />
+		
+	</bean>
+
+	<bean id="box154" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="manager5" />
+	
+	</bean>
+
+	<bean id="box155" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="manager5" />
+		
+	</bean>
+
+	<bean id="box156" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="manager5" />
+	</bean>
+	
+	<bean id="box157" class="domain.Box">
+		<property name="name" value="in box" />
+		<property name="actor" ref="manager6" />
+		
+	</bean>
+
+	<bean id="box158" class="domain.Box">
+		<property name="name" value="out box" />
+		<property name="actor" ref="manager6" />
+	
+	</bean>
+
+	<bean id="box159" class="domain.Box">
+		<property name="name" value="trash box" />
+		<property name="actor" ref="manager6" />
+		
+	</bean>
+
+	<bean id="box160" class="domain.Box">
+		<property name="name" value="spam box" />
+		<property name="actor" ref="manager6" />
+	</bean>
+	
+	
+
+	<!-- Teams -->	
+	
+	<bean id="team1" class="domain.Team">
+		<property name="name" value="Hispalis Club de Fútbol" />
+		<property name="address" value="Avenida de Llanes" />
+		<property name="stadiumName" value="Hispalis Arena" />
+		<property name="badgeUrl" value="http://www.team1.com/" />
+		<property name="trackRecord" value="4" />
+		<property name="establishmentDate" value="2000/03/07" />
+		<property name="functional" value="true" />
+		<property name="president" ref="president1" />
+		
+	</bean>
+	
+	<bean id="team2" class="domain.Team">
+		<property name="name" value="Astigi Balompie" />
+		<property name="address" value="Avenida de Kansas City" />
+		<property name="stadiumName" value="Astigi Stadium" />
+		<property name="badgeUrl" value="http://www.team2.com/" />
+		<property name="trackRecord" value="3" />
+		<property name="establishmentDate" value="1987/05/14" />
+		<property name="functional" value="true" />
+		<property name="president" ref="president2" />
+		
+	</bean>
+	
+	<bean id="team3" class="domain.Team">
+		<property name="name" value="Atlético Isbilia" />
+		<property name="address" value="Torneo" />
+		<property name="stadiumName" value="Olimpico de Triana" />
+		<property name="badgeUrl" value="http://www.team3.com/" />
+		<property name="trackRecord" value="0" />
+		<property name="establishmentDate" value="2012/01/21" />
+		<property name="functional" value="false" />
+		<property name="president" ref="president3" />
+		
+	</bean>
+	
+	<bean id="team5" class="domain.Team">
+		<property name="name" value="Rayo Italica" />
+		<property name="address" value="Santiponce" />
+		<property name="stadiumName" value="Coliseum Italica" />
+		<property name="badgeUrl" value="http://www.team5.com/" />
+		<property name="trackRecord" value="0" />
+		<property name="establishmentDate" value="2013/04/21" />
+		<property name="functional" value="true" />
+		<property name="president" ref="president5" />
+		
+	</bean>
+	
+	<!-- Messages -->
+
+	<bean id="message1" class="domain.Message">
+		<property name="moment" value="2019/02/13 13:53" />
+		<property name="subject" value="Cambio de hora de entrenamiento" />
+		<property name="body" value="Mister. Hay que adelantar media hora el entrenamiento del lunes" />
+		<property name="priority" value="HIGH" />
+		<property name="tags" value="tag1" />
+		<property name="spam" value="False" />
+		<property name="sender" ref="president1" />
+		<property name="recipient" ref="manager1" />
+		<property name="boxes">
+			<list>
+				<ref bean="box6" />
+				<ref bean="box81" />
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="message2" class="domain.Message">
+		<property name="moment" value="2019/01/14 14:53" />
+		<property name="subject" value="Gran notica" />
+		<property name="body" value="Van a subirme la cláusula un millón más que la última vez" />
+		<property name="priority" value="LOW" />
+		<property name="tags" value="tag2" />
+		<property name="spam" value="True" />
+		<property name="sender" ref="player1" />
+		<property name="recipient" ref="player2" />
+		<property name="boxes">
+			<list>
+				<ref bean="box22" />
+				<ref bean="box25" />
+			</list>
+		</property>
+	</bean>
+	
+	<!-- StatisticalDatas -->
+
+	<bean id="StatisticalData1" class="domain.StatisticalData">
+		<property name="yellowCards" value="0" />
+		<property name="redCards" value="0" />
+		<property name="goals" value="0" />
+		<property name="matchsPlayed" value="3" />
+		<property name="accumulatedYellowCard" value="0" />
+		<property name="player" ref="player1" />
+
+	</bean>
+	
+	<bean id="StatisticalData2" class="domain.StatisticalData">
+		<property name="yellowCards" value="0" />
+		<property name="redCards" value="0" />
+		<property name="goals" value="2" />
+		<property name="matchsPlayed" value="3" />
+		<property name="accumulatedYellowCard" value="0" />
+		<property name="player" ref="player2" />
+
+	</bean>
+	
+	<bean id="StatisticalData3" class="domain.StatisticalData">
+		<property name="yellowCards" value="0" />
+		<property name="redCards" value="0" />
+		<property name="goals" value="2" />
+		<property name="matchsPlayed" value="3" />
+		<property name="accumulatedYellowCard" value="0" />
+		<property name="player" ref="player3" />
+
+	</bean>
+	
+	<bean id="StatisticalData4" class="domain.StatisticalData">
+		<property name="yellowCards" value="0" />
+		<property name="redCards" value="0" />
+		<property name="goals" value="1" />
+		<property name="matchsPlayed" value="3" />
+		<property name="accumulatedYellowCard" value="0" />
+		<property name="player" ref="player4" />
+
+	</bean>
+	
+	<bean id="StatisticalData5" class="domain.StatisticalData">
+		<property name="yellowCards" value="0" />
+		<property name="redCards" value="1" />
+		<property name="goals" value="0" />
+		<property name="matchsPlayed" value="3" />
+		<property name="accumulatedYellowCard" value="0" />
+		<property name="player" ref="player5" />
+
+	</bean>
+	
+	<bean id="StatisticalData6" class="domain.StatisticalData">
+		<property name="yellowCards" value="0" />
+		<property name="redCards" value="0" />
+		<property name="goals" value="0" />
+		<property name="matchsPlayed" value="2" />
+		<property name="accumulatedYellowCard" value="0" />
+		<property name="player" ref="player6" />
+
+	</bean>
+	
+	<bean id="StatisticalData7" class="domain.StatisticalData">
+		<property name="yellowCards" value="0" />
+		<property name="redCards" value="0" />
+		<property name="goals" value="0" />
+		<property name="matchsPlayed" value="2" />
+		<property name="accumulatedYellowCard" value="0" />
+		<property name="player" ref="player7" />
+
+	</bean>
+	
+	<bean id="StatisticalData8" class="domain.StatisticalData">
+		<property name="yellowCards" value="0" />
+		<property name="redCards" value="0" />
+		<property name="goals" value="0" />
+		<property name="matchsPlayed" value="2" />
+		<property name="accumulatedYellowCard" value="0" />
+		<property name="player" ref="player8" />
+
+	</bean>
+	
+	<bean id="StatisticalData9" class="domain.StatisticalData">
+		<property name="yellowCards" value="0" />
+		<property name="redCards" value="0" />
+		<property name="goals" value="0" />
+		<property name="matchsPlayed" value="2" />
+		<property name="accumulatedYellowCard" value="0" />
+		<property name="player" ref="player9" />
+
+	</bean>
+	
+	<bean id="StatisticalData10" class="domain.StatisticalData">
+		<property name="yellowCards" value="0" />
+		<property name="redCards" value="0" />
+		<property name="goals" value="0" />
+		<property name="matchsPlayed" value="2" />
+		<property name="accumulatedYellowCard" value="0" />
+		<property name="player" ref="player10" />
+
+	</bean>
+	
+	<bean id="StatisticalData11" class="domain.StatisticalData">
+		<property name="yellowCards" value="0" />
+		<property name="redCards" value="0" />
+		<property name="goals" value="0" />
+		<property name="matchsPlayed" value="0" />
+		<property name="accumulatedYellowCard" value="0" />
+		<property name="player" ref="player11" />
+
+	</bean>
+	
+	<bean id="StatisticalData12" class="domain.StatisticalData">
+		<property name="yellowCards" value="0" />
+		<property name="redCards" value="0" />
+		<property name="goals" value="0" />
+		<property name="matchsPlayed" value="0" />
+		<property name="accumulatedYellowCard" value="0" />
+		<property name="player" ref="player12" />
+
+	</bean>
+	
+	<bean id="StatisticalData13" class="domain.StatisticalData">
+		<property name="yellowCards" value="0" />
+		<property name="redCards" value="0" />
+		<property name="goals" value="0" />
+		<property name="matchsPlayed" value="0" />
+		<property name="accumulatedYellowCard" value="0" />
+		<property name="player" ref="player13" />
+
+	</bean>
+	
+	<bean id="StatisticalData14" class="domain.StatisticalData">
+		<property name="yellowCards" value="0" />
+		<property name="redCards" value="0" />
+		<property name="goals" value="1" />
+		<property name="matchsPlayed" value="1" />
+		<property name="accumulatedYellowCard" value="0" />
+		<property name="player" ref="player14" />
+
+	</bean>
+	
+	<bean id="StatisticalData15" class="domain.StatisticalData">
+		<property name="yellowCards" value="0" />
+		<property name="redCards" value="0" />
+		<property name="goals" value="0" />
+		<property name="matchsPlayed" value="1" />
+		<property name="accumulatedYellowCard" value="0" />
+		<property name="player" ref="player15" />
+
+	</bean>
+	
+	<bean id="StatisticalData16" class="domain.StatisticalData">
+		<property name="yellowCards" value="0" />
+		<property name="redCards" value="0" />
+		<property name="goals" value="0" />
+		<property name="matchsPlayed" value="1" />
+		<property name="accumulatedYellowCard" value="0" />
+		<property name="player" ref="player16" />
+
+	</bean>
+	
+	<bean id="StatisticalData17" class="domain.StatisticalData">
+		<property name="yellowCards" value="0" />
+		<property name="redCards" value="0" />
+		<property name="goals" value="0" />
+		<property name="matchsPlayed" value="1" />
+		<property name="accumulatedYellowCard" value="0" />
+		<property name="player" ref="player17" />
+
+	</bean>
+	
+	<bean id="StatisticalData18" class="domain.StatisticalData">
+		<property name="yellowCards" value="0" />
+		<property name="redCards" value="0" />
+		<property name="goals" value="0" />
+		<property name="matchsPlayed" value="1" />
+		<property name="accumulatedYellowCard" value="0" />
+		<property name="player" ref="player18" />
+
+	</bean>
+	
+	<bean id="StatisticalData19" class="domain.StatisticalData">
+		<property name="yellowCards" value="0" />
+		<property name="redCards" value="0" />
+		<property name="goals" value="0" />
+		<property name="matchsPlayed" value="0" />
+		<property name="accumulatedYellowCard" value="0" />
+		<property name="player" ref="player19" />
+
+	</bean>
+	
+	<bean id="StatisticalData20" class="domain.StatisticalData">
+		<property name="yellowCards" value="0" />
+		<property name="redCards" value="0" />
+		<property name="goals" value="0" />
+		<property name="matchsPlayed" value="0" />
+		<property name="accumulatedYellowCard" value="0" />
+		<property name="player" ref="player20" />
+
+	</bean>
+	
+	<!-- Signings -->
+
+	<bean id="signing1" class="domain.Signing">
+		<property name="price" value="20000000.0" />
+		<property name="status" value="ACCEPTED" />
+		<property name="mandatoryComment" value="" />
+		<property name="offeredClause" value="35000000.0" />
+		<property name="president" ref="president1" />
+		<property name="player" ref="player1" />
+	</bean>
+	
+	<bean id="signing2" class="domain.Signing">
+		<property name="price" value="30000000.0" />
+		<property name="status" value="ACCEPTED" />
+		<property name="mandatoryComment" value="" />
+		<property name="offeredClause" value="47000000.0" />
+		<property name="president" ref="president1" />
+		<property name="player" ref="player2" />
+	</bean>
+	
+	<bean id="signing3" class="domain.Signing">
+		<property name="price" value="30000000.0" />
+		<property name="status" value="ACCEPTED" />
+		<property name="mandatoryComment" value="" />
+		<property name="offeredClause" value="50000000.0" />
+		<property name="president" ref="president1" />
+		<property name="player" ref="player3" />
+	</bean>
+	
+	<bean id="signing4" class="domain.Signing">
+		<property name="price" value="15000000.0" />
+		<property name="status" value="ACCEPTED" />
+		<property name="mandatoryComment" value="" />
+		<property name="offeredClause" value="25000000.0" />
+		<property name="president" ref="president1" />
+		<property name="player" ref="player4" />
+	</bean>
+	
+	<bean id="signing5" class="domain.Signing">
+		<property name="price" value="50000000.0" />
+		<property name="status" value="ACCEPTED" />
+		<property name="mandatoryComment" value="" />
+		<property name="offeredClause" value="75000000.0" />
+		<property name="president" ref="president1" />
+		<property name="player" ref="player5" />
+	</bean>
+	
+	<bean id="signing6" class="domain.Signing">
+		<property name="price" value="55000000.0" />
+		<property name="status" value="ACCEPTED" />
+		<property name="mandatoryComment" value="" />
+		<property name="offeredClause" value="80000000.0" />
+		<property name="president" ref="president2" />
+		<property name="player" ref="player6" />
+	</bean>
+	
+	<bean id="signing7" class="domain.Signing">
+		<property name="price" value="10000000.0" />
+		<property name="status" value="ACCEPTED" />
+		<property name="mandatoryComment" value="" />
+		<property name="offeredClause" value="30000000.0" />
+		<property name="president" ref="president2" />
+		<property name="player" ref="player7" />
+	</bean>
+	
+	<bean id="signing8" class="domain.Signing">
+		<property name="price" value="30000000.0" />
+		<property name="status" value="ACCEPTED" />
+		<property name="mandatoryComment" value="" />
+		<property name="offeredClause" value="45000000.0" />
+		<property name="president" ref="president2" />
+		<property name="player" ref="player8" />
+	</bean>
+	
+	<bean id="signing9" class="domain.Signing">
+		<property name="price" value="20000000.0" />
+		<property name="status" value="ACCEPTED" />
+		<property name="mandatoryComment" value="" />
+		<property name="offeredClause" value="30000000.0" />
+		<property name="president" ref="president2" />
+		<property name="player" ref="player9" />
+	</bean>
+	
+	<bean id="signing10" class="domain.Signing">
+		<property name="price" value="30000000.0" />
+		<property name="status" value="ACCEPTED" />
+		<property name="mandatoryComment" value="" />
+		<property name="offeredClause" value="55000000.0" />
+		<property name="president" ref="president2" />
+		<property name="player" ref="player10" />
+	</bean>
+	
+	<bean id="signing11" class="domain.Signing">
+		<property name="price" value="50000000.0" />
+		<property name="status" value="ACCEPTED" />
+		<property name="mandatoryComment" value="" />
+		<property name="offeredClause" value="70000000.0" />
+		<property name="president" ref="president3" />
+		<property name="player" ref="player11" />
+	</bean>
+	
+	<bean id="signing12" class="domain.Signing">
+		<property name="price" value="35000000.0" />
+		<property name="status" value="ACCEPTED" />
+		<property name="mandatoryComment" value="" />
+		<property name="offeredClause" value="65000000.0" />
+		<property name="president" ref="president3" />
+		<property name="player" ref="player12" />
+	</bean>
+	
+	<bean id="signing13" class="domain.Signing">
+		<property name="price" value="10000000.0" />
+		<property name="status" value="ACCEPTED" />
+		<property name="mandatoryComment" value="" />
+		<property name="offeredClause" value="30000000.0" />
+		<property name="president" ref="president3" />
+		<property name="player" ref="player13" />
+	</bean>
+	
+	<bean id="signing14" class="domain.Signing">
+		<property name="price" value="10000000.0" />
+		<property name="status" value="ACCEPTED" />
+		<property name="mandatoryComment" value="" />
+		<property name="offeredClause" value="25000000.0" />
+		<property name="president" ref="president5" />
+		<property name="player" ref="player14" />
+	</bean>
+	
+	<bean id="signing15" class="domain.Signing">
+		<property name="price" value="10000000.0" />
+		<property name="status" value="ACCEPTED" />
+		<property name="mandatoryComment" value="" />
+		<property name="offeredClause" value="30000000.0" />
+		<property name="president" ref="president5" />
+		<property name="player" ref="player15" />
+	</bean>
+	
+	<bean id="signing16" class="domain.Signing">
+		<property name="price" value="10000000.0" />
+		<property name="status" value="ACCEPTED" />
+		<property name="mandatoryComment" value="" />
+		<property name="offeredClause" value="20000000.0" />
+		<property name="president" ref="president5" />
+		<property name="player" ref="player16" />
+	</bean>
+	
+	<bean id="signing17" class="domain.Signing">
+		<property name="price" value="10000000.0" />
+		<property name="status" value="ACCEPTED" />
+		<property name="mandatoryComment" value="" />
+		<property name="offeredClause" value="15000000.0" />
+		<property name="president" ref="president5" />
+		<property name="player" ref="player17" />
+	</bean>
+	
+	<bean id="signing18" class="domain.Signing">
+		<property name="price" value="10000000.0" />
+		<property name="status" value="ACCEPTED" />
+		<property name="mandatoryComment" value="" />
+		<property name="offeredClause" value="35000000.0" />
+		<property name="president" ref="president5" />
+		<property name="player" ref="player18" />
+	</bean>
+	
+	<bean id="signing19" class="domain.Signing">
+		<property name="price" value="10000000.0" />
+		<property name="status" value="PENDING" />
+		<property name="mandatoryComment" value="" />
+		<property name="offeredClause" value="40000000.0" />
+		<property name="president" ref="president5" />
+		<property name="player" ref="player20" />
+	</bean>
+	
+	<bean id="signing20" class="domain.Signing">
+		<property name="price" value="15000000.0" />
+		<property name="status" value="REJECTED" />
+		<property name="mandatoryComment" value="Cantidad insuficiente" />
+		<property name="offeredClause" value="25000000.0" />
+		<property name="president" ref="president5" />
+		<property name="player" ref="player1" />
+	</bean>
+	
+	<!-- Hirings -->
+
+	<bean id="hiring1" class="domain.Hiring">
+		<property name="price" value="20000000.0" />
+		<property name="status" value="ACCEPTED" />
+		<property name="mandatoryComment" value="" />
+		<property name="president" ref="president1" />
+		<property name="manager" ref="manager1" />
+	</bean>
+	
+	<bean id="hiring2" class="domain.Hiring">
+		<property name="price" value="30000000.0" />
+		<property name="status" value="ACCEPTED" />
+		<property name="mandatoryComment" value="" />
+		<property name="president" ref="president2" />
+		<property name="manager" ref="manager2" />
+	</bean>
+	
+	
+	
+	<bean id="hiring4" class="domain.Hiring">
+		<property name="price" value="40000000.0" />
+		<property name="status" value="ACCEPTED" />
+		<property name="mandatoryComment" value="" />
+		<property name="president" ref="president5" />
+		<property name="manager" ref="manager4" />
+	</bean>
+	
+	<bean id="hiring5" class="domain.Hiring">
+		<property name="price" value="55000000.0" />
+		<property name="status" value="PENDING" />
+		<property name="mandatoryComment" value="" />
+		<property name="president" ref="president3" />
+		<property name="manager" ref="manager5" />
+	</bean>
+	
+	<bean id="hiring6" class="domain.Hiring">
+		<property name="price" value="45000000.0" />
+		<property name="status" value="REJECTED" />
+		<property name="mandatoryComment" value="Contrato en vigor" />
+		<property name="president" ref="president1" />
+		<property name="manager" ref="manager2" />
+	</bean>
+	
+	<!-- Reports -->
+
+	<bean id="report1" class="domain.Report">
+		<property name="moment" value="2019/05/18" />
+		<property name="description" value="Ha llegado tarde al entrenamiento. No es la primera vez que pasa" />
+		<property name="player" ref="player11" />
+
+	</bean>
+	
+	<bean id="report2" class="domain.Report">
+		<property name="moment" value="2019/05/16" />
+		<property name="description" value="Se niega a viajar con el equipo" />
+		<property name="player" ref="player4" />
+
+	</bean>
+	
+	<!-- Trainings -->
+
+	<bean id="training1" class="domain.Training">
+		<property name="startDate" value="2019/09/29 09:00" />
+		<property name="endingDate" value="2019/09/29 13:00" />
+		<property name="place" value="Ciudad deportiva. Campo nº 2" />
+		<property name="description" value="Sesión preparatoria" />
+		<property name="manager" ref="manager1" />
+		<property name="players">
+			<list>
+				<ref bean="player1" />
+				<ref bean="player2" />
+				<ref bean="player3" />
+				<ref bean="player4" />
+
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="training2" class="domain.Training">
+		<property name="startDate" value="2019/05/27 09:30" />
+		<property name="endingDate" value="2019/05/27 13:30" />
+		<property name="place" value="Ciudad deportiva. Campo nº 6" />
+		<property name="description" value="Sesión de jugadas de estrategia" />
+		<property name="manager" ref="manager2" />
+		<property name="players">
+			<list>
+				<ref bean="player6" />
+				<ref bean="player7" />
+				<ref bean="player8" />
+				<ref bean="player9" />
+				<ref bean="player10" />
+			</list>
+		</property>
+	</bean>
+	
+
+	
+	<!-- Games -->
+
+	<bean id="game1" class="domain.Game">
+		<property name="gameDate" value="2019/05/01 20:00" />
+		<property name="place" value="Hispalis Arena" />
+		<property name="friendly" value="true" />
+		<property name="homeTeam" ref="team1" />
+		<property name="visitorTeam" ref="team2" />
+		<property name="referee" ref="referee1" />
+	</bean>
+	
+	<bean id="game2" class="domain.Game">
+		<property name="gameDate" value="2019/05/07 20:00" />
+		<property name="place" value="Hispalis Arena" />
+		<property name="friendly" value="true" />
+		<property name="homeTeam" ref="team1" />
+		<property name="visitorTeam" ref="team5" />
+		<property name="referee" ref="referee1" />
+	</bean>
+	
+	<bean id="game3" class="domain.Game">
+		<property name="gameDate" value="2019/07/07 23:00" />
+		<property name="place" value="Astigi Stadium" />
+		<property name="friendly" value="true" />
+		<property name="homeTeam" ref="team2" />
+		<property name="visitorTeam" ref="team5" />
+		<property name="referee" ref="referee2" />
+	</bean>
+	
+	<bean id="game4" class="domain.Game">
+		<property name="gameDate" value="2019/08/07 23:00" />
+		<property name="place" value="Astigi Stadium" />
+		<property name="friendly" value="true" />
+		<property name="homeTeam" ref="team2" />
+		<property name="visitorTeam" ref="team5" />
+		<property name="referee" ref="referee3" />
+	</bean>
+	
+	<bean id="game5" class="domain.Game">
+		<property name="gameDate" value="2019/05/14 20:00" />
+		<property name="place" value="Hispalis Arena" />
+		<property name="friendly" value="true" />
+		<property name="homeTeam" ref="team1" />
+		<property name="visitorTeam" ref="team2" />
+		<property name="referee" ref="referee1" />
+	</bean>
+	
+	<bean id="game6" class="domain.Game">
+		<property name="gameDate" value="2019/05/15 20:00" />
+		<property name="place" value="Hispalis Arena" />
+		<property name="friendly" value="true" />
+		<property name="homeTeam" ref="team1" />
+		<property name="visitorTeam" ref="team2" />
+		<property name="referee" ref="referee1" />
+	</bean>
+	
+	<bean id="game7" class="domain.Game">
+		<property name="gameDate" value="2019/05/28 20:00" />
+		<property name="place" value="Hispalis Arena" />
+		<property name="friendly" value="true" />
+		<property name="homeTeam" ref="team1" />
+		<property name="visitorTeam" ref="team2" />
+		<property name="referee" ref="referee1" />
+	</bean>
+	
+	<!-- Minutes -->
+
+	<bean id="minutes1" class="domain.Minutes">
+		<property name="homeScore" value="2" />
+		<property name="visitorScore" value="0" />
+		<property name="closed" value="true" />
+		<property name="playersScore">
+			<list>
+			<ref bean="player2" />
+			<ref bean="player3" />
+			</list>
+		</property>
+		<property name="playersYellow">
+			<list>
+
+			</list>
+		</property>
+		<property name="playersRed">
+			<list>
+				
+			</list>
+		</property>
+		<property name="game" ref="game1" />
+		<property name="winner" ref="team1"/>
+	</bean> 
+	
+	<bean id="minutes2" class="domain.Minutes">
+		<property name="homeScore" value="3" />
+		<property name="visitorScore" value="1" />
+		<property name="closed" value="true" />
+		<property name="playersScore">
+			<list>
+				<ref bean="player2" />
+				<ref bean="player3" />
+				<ref bean="player4" />
+				<ref bean="player14" />
+			</list>
+		</property>
+		<property name="playersYellow">
+			<list>
+
+			</list>
+		</property>
+		<property name="playersRed">
+			<list>
+				
+			</list>
+		</property>
+		<property name="game" ref="game2" />
+		<property name="winner" ref="team1"/>
+	</bean> 
+	
+	<bean id="minutes3" class="domain.Minutes">
+		<property name="homeScore" value="0" />
+		<property name="visitorScore" value="0" />
+		<property name="closed" value="true" />
+		<property name="playersScore">
+			<list>
+
+			</list>
+		</property>
+		<property name="playersYellow">
+			<list>
+
+			</list>
+		</property>
+		<property name="playersRed">
+			<list>
+				<ref bean="player5" />
+			</list>
+		</property>
+		<property name="game" ref="game5" />
+	</bean> 
+	
+	<!-- Competitions -->
+
+	<bean id="competition1" class="domain.Competition">
+		<property name="startDate" value="2019/08/29" />
+		<property name="endDate" value="2019/12/29" />
+		<property name="nameTrophy" value="Copa Andalucia Occidental" />
+		<property name="closed" value="false" />
+		<property name="federation" ref="federation1" />
+		<property name="format" ref="format1" />
+		<property name="teams">
+			<list>
+				<ref bean="team1" />
+				<ref bean="team2" />
+			</list>
+		</property>
+		<property name="games">
+			<list>
+
+			</list>
+		</property>
+	</bean>
+	
+	<!-- Formats -->
+
+	<bean id="format1" class="domain.Format">
+		<property name="type" value="TOURNAMENT" />
+		<property name="minimumTeams" value="2" />
+		<property name="maximumTeams" value="16" />
+		<property name="federation" ref="federation1" />
+	</bean>
+
+	<bean id="format2" class="domain.Format">
+		<property name="type" value="LEAGUE" />
+		<property name="minimumTeams" value="2" />
+		<property name="maximumTeams" value="16" />
+		<property name="federation" ref="federation1" />
+	</bean>
+	
+	<!-- Histories -->
+
+	<bean id="history1" class="domain.History">
+		<property name="player" ref="player1" />
+		<property name="personalData" ref="personalData1" />
+		<property name="playerRecords">
+			<list>
+				<ref bean="playerRecord1" />
+			</list>
+		</property>
+		<property name="sportRecords">
+			<list>
+				<ref bean="sportRecord1" />
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="history2" class="domain.History">
+		<property name="player" ref="player2" />
+		<property name="personalData" ref="personalData2" />
+		<property name="playerRecords">
+			<list>
+				<ref bean="playerRecord2" />
+			</list>
+		</property>
+		<property name="sportRecords">
+			<list>
+				<ref bean="sportRecord2" />
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="history3" class="domain.History">
+		<property name="player" ref="player3" />
+		<property name="personalData" ref="personalData3" />
+		<property name="playerRecords">
+			<list>
+				
+			</list>
+		</property>
+		<property name="sportRecords">
+			<list>
+				
+			</list>
+		</property>
+	</bean>
+	
+	<!-- Personal Datas -->
+
+	<bean id="personalData1" class="domain.PersonalData">
+		<property name="photos">
+			<list>
+				<value>http://cort.as/-IyDs</value>
+				<value>http://cort.as/-IyEM</value>
+			</list>
+		</property>
+		<property name="socialNetworkProfilelink" value="http://instagram.com/" />
+	</bean>
+	
+	<bean id="personalData2" class="domain.PersonalData">
+		<property name="photos">
+			<list>
+				<value>http://cort.as/-IyEY</value>
+				<value>http://cort.as/-IyEu</value>
+			</list>
+		</property>
+		<property name="socialNetworkProfilelink" value="http://facebook.com/" />
+	</bean>
+	
+	<bean id="personalData3" class="domain.PersonalData">
+		<property name="photos">
+			<list>
+				
+			</list>
+		</property>
+		<property name="socialNetworkProfilelink" value="http://twitter.com/" />
+	</bean>
+	
+	<!-- Sport Records -->
+
+	<bean id="sportRecord1" class="domain.SportRecord">
+		<property name="sportName" value="Football" />
+		<property name="startDate" value="1998/06/07" />
+		<property name="endDate" value="2012/07/21" />
+		<property name="teamSport" value="true" />
+	</bean>
+	
+	<bean id="sportRecord2" class="domain.SportRecord">
+		<property name="sportName" value="Football" />
+		<property name="startDate" value="1998/05/06" />
+		<property name="endDate" value="2012/06/20" />
+		<property name="teamSport" value="true" />
+	</bean>
+	
+	<!-- Player Records -->
+
+	<bean id="playerRecord1" class="domain.PlayerRecord">
+		<property name="startDate" value="1998/06/07" />
+		<property name="endDate" value="2012/07/21" />
+		<property name="salary" value="4.0" />
+		<property name="squadNumber" value="9" />
+	</bean>
+	
+	<bean id="playerRecord2" class="domain.PlayerRecord">
+		<property name="startDate" value="1997/05/03" />
+		<property name="endDate" value="2012/04/11" />
+		<property name="salary" value="7.0" />
+		<property name="squadNumber" value="19" />
+	</bean>
+	
+	<!-- Sponsorships -->
+	
+
+	<bean id="sponsorship1" class="domain.Sponsorship">
+		<property name="creditCard" ref="creditCard1" />
+		<property name="banner" value="http://cort.as/-IuNE" />
+		<property name="target" value="http://target1.com/" />
+		<property name="sponsor" ref="sponsor1" />
+		<property name="game" ref="game1" />
+	</bean>
+	
+	<bean id="sponsorship2" class="domain.Sponsorship">
+		<property name="creditCard" ref="creditCard2" />
+		<property name="banner" value="http://cort.as/-IuNZ" />
+		<property name="target" value="http://target2.com/" />
+		<property name="sponsor" ref="sponsor2" />
+		<property name="team" ref="team1" />
+	</bean>
+	
+	<bean id="sponsorship3" class="domain.Sponsorship">
+		<property name="creditCard" ref="creditCard3" />
+		<property name="banner" value="http://cort.as/-IuNj" />
+		<property name="target" value="http://target3.com/" />
+		<property name="sponsor" ref="sponsor2" />
+		<property name="player" ref="player1" />
+	</bean>
+
+	<!-- CreditCards -->
+
+	<bean id="creditCard1" class="domain.CreditCard">
+		<property name="holderName" value="hn1" />
+		<property name="make" value="VISA" />
+		<property name="number" value="6011665725727345" />
+		<property name="expMonth" value="10" />
+		<property name="expYear" value="2019" />
+		<property name="cvv" value="123" />
+	</bean>
+	
+	<bean id="creditCard2" class="domain.CreditCard">
+		<property name="holderName" value="hn2" />
+		<property name="make" value="VISA" />
+		<property name="number" value="4024007138701023" />
+		<property name="expMonth" value="11" />
+		<property name="expYear" value="2020" />
+		<property name="cvv" value="456" />
+	</bean>
+	
+	<bean id="creditCard3" class="domain.CreditCard">
+		<property name="holderName" value="hn3" />
+		<property name="make" value="VISA" />
+		<property name="number" value="5155250731632157" />
+		<property name="expMonth" value="12" />
+		<property name="expYear" value="2021" />
+		<property name="cvv" value="789" />
+	</bean>
+	
+	<bean id="configuration" class="domain.Configuration">
+		<property name="spamWords">
+			<list>
+				<value>viagra</value>
+				<value>cialis</value>
+				<value>sex</value>
+				<value>one million</value>
+				<value>you’ve been selected</value>
+				<value>Nigeria</value>
+				<value>sexo</value>
+				<value>un millón</value>
+				<value>ha sido seleccionado</value>
+			</list>
+		</property>
+		<property name="makes">
+			<list>
+				<value>VISA</value>
+				<value>MASTERCARD</value>
+			</list>
+		</property>	
+		<property name="countryCode" value="+34" />
+		<property name="finderTime" value="1" />
+		<property name="finderResult" value="10" />
+		<property name="welcomeMessageEs" value="¡Bienvenidos a Acme Champions! Nunca nos rendimos" />
+		<property name="banner" value="https://i.imgur.com/YuSHu8r.png" />
+		<property name="welcomeMessage" value="Welcome to Acme Champions! We never surrender" />
+	</bean>
+</beans>

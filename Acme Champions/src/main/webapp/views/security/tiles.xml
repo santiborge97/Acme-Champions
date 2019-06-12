@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- 
+ * tiles.xml
+ *
+ * Copyright (C) 2019 Universidad de Sevilla
+ * 
+ * The use of this project is hereby constrained to the conditions of the 
+ * TDG Licence, a copy of which you may download from 
+ * http://www.tdg-seville.info/License.html
+ -->
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+       
+<tiles-definitions>
+
+	<definition name="security/login" extends="master.page">
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="body" value="/views/security/login.jsp" />
+	</definition>
+	
+	<definition name="security/signUpManager" extends="master.page">
+		<put-attribute name="title" value="Sign up manager" />
+		<put-attribute name="body" value="/views/security/signUpManager.jsp" />
+	</definition>
+	
+	<definition name="security/signUpPlayer" extends="master.page">
+		<put-attribute name="title" value="Sign up player" />
+		<put-attribute name="body" value="/views/security/signUpPlayer.jsp" />
+	</definition>
+	
+	<definition name="security/signUpReferee" extends="master.page">
+		<put-attribute name="title" value="Sign up referee" />
+		<put-attribute name="body" value="/views/security/signUpReferee.jsp" />
+	</definition>
+	
+	<definition name="security/signUpSponsor" extends="master.page">
+		<put-attribute name="title" value="Sign up sponsor" />
+		<put-attribute name="body" value="/views/security/signUpSponsor.jsp" />
+	</definition>
+	
+	<definition name="security/signUpFederation" extends="master.page">
+		<put-attribute name="title" value="Sign up federation" />
+		<put-attribute name="body" value="/views/security/signUpFederation.jsp" />
+	</definition>
+		
+</tiles-definitions>
